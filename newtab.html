@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="newtab.css">
+  <title>New Tab</title>
+</head>
+
+<body>
+  <div class="search-container">
+    <form role="search" id="form" action="https://www.google.com/search" method="get" target="_blank">
+      <input id="query" type="search" name="q" placeholder="Google-Search..." autofocus size="50"
+        aria-label="Search through site content">
+      <button>
+        <svg viewBox="0 0 1024 1024">
+          <path class="path1"
+            d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+          </path>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <div id="playingnow">
+    <md-block rendered="content">
+      <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=SPOTIFY_USERID&redirect=true">
+        <img id="spotifyImage"
+          src="https://spotify-github-profile.kittinanx.com/api/view?uid=SPOTIFY_USERID&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=true&bar_color=00ffe1&bar_color_cover=false"
+          alt="Spotify Now Playing">
+      </a>
+    </md-block>
+  </div>
+
+  <script src="md-block.js"></script>
+  <script src="newtab.js"></script>
+</body>
+
+</html>

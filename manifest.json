@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Better NewTab",
+  "description": "Better Browser NewTab Page by Jettcodey",
+  "version": "1.2",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Assets/icon.png",
+      "32": "Assets/icon.png",
+      "48": "Assets/icon.png",
+      "128": "Assets/icon.png"
+    }
+  },
+  "icons": {
+    "16": "Assets/icon.png",
+    "32": "Assets/icon.png",
+    "48": "Assets/icon.png",
+    "128": "Assets/icon.png"
+  },
+
+  "permissions": [
+    "unlimitedStorage",
+    "storage",
+    "tabs",
+    "scripting"
+
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}

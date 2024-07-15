@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <title>Popup</title>
+</head>
+<body>
+  <div class="scrollable-container">
+    <div class="scrollable-content" id="buttonDiv"></div>
+  </div>
+
+  <div class="options-container">
+    <button id="optionsBtn">Options</button>
+    <div class="options-content" id="optionsContent">
+      <label for="defaultImageInput">Default Image URL:</label>
+      <input type="text" id="defaultImageInput" placeholder="Enter URL">
+      <button id="setDefaultImageBtn">Set Default Image</button>
+      <input type="file" id="fileInput" accept="image/*">
+      <button id="removeBackgroundBtn">Remove Background</button>
+    </div>
+  </div>
+
+  <div id="cacheProgress" class="hidden">Caching in progress...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

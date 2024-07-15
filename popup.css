@@ -1,0 +1,62 @@
+body {
+  min-width: 300px;
+}
+
+.scrollable-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.scrollable-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+button span {
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+}
+
+button.current {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+.options-container {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.options-content {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.options-content label {
+  margin-bottom: 5px;
+}
+
+.options-content button {
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none;
+}
